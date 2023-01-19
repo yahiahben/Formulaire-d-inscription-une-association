@@ -1,0 +1,7 @@
+{
+	"require": {
+		"elasticsearch/elasticsearch": "^7.5",
+		"mercuryseries/flashy-bundle": "^5.1",
+		"tamtamchik/simple-flash": "^2.0"
+	}
+}

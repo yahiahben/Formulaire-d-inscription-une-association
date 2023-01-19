@@ -1,0 +1,87 @@
+#newtask{
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#newtask input{
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  font-weight: auto;
+  position: relative;
+  border-radius: 4px;
+}
+
+#newtask button{
+  position: relative;
+  float: right;
+  width: 15%;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: pink;
+  border: none;
+  color: #ffffff;
+  cursor: auto;
+  outline: none;
+  opacity: 0.7;
+  align-items: center;
+}
+
+button#push.active {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#tasks{
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#tasks li{
+  position: relative;
+  list-style: none;
+  margin-bottom: 8px;
+  background-color: rgb(255, 240, 243);
+  padding: 10px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+  border-radius: 5px;
+}
+
+.icone {
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+#tasks li .icone{
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#tasks li:hover .icone{
+  right: 0px;
+}
